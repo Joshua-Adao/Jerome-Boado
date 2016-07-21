@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I.D.</title>
+</head>
+<body>
+  <h1> Get element by ID</h1>
+  <LABEL>First name</LABEL>
+  <p><input type="text"name="firstname" id="fname"value=""placeholder="Juan"></p>
+  <label>LAstNAme</label>
+  <p><input type="text"name="LAstname" id="lname"value=""placeholder="Dela Cruz"></p>
+  <button type="button" onclick="getName">Get Full NAme</button>
+  <script>
+  function getName(){
+  	var fname,lname;
+  	fname = document.getElementById('fname').value;
+  	lname = document.getElementById('lname').value;
+  	fullname = fname+" "+lname;
+    document.write("<h1>Hello"+fullname+"</h1");
+
+  }
+  </script>
+</body>
+</html>
